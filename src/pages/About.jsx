@@ -1,9 +1,12 @@
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
+import { Link } from 'react-router-dom'
+
 import React from 'react'
 import { skills, experiences } from '../constants'
 import CTA from '../components/CTA';
+
 
 const About = () => {
   return (
@@ -91,9 +94,22 @@ const About = () => {
         </div>
       </div>
 
-      <hr classname="border-slate-200"/>
+      <hr className="border-slate-200"/>
       
-      <CTA />
+      <CTA /> <br/> <br/>
+
+      <hr className="border-slate-200" />
+
+      <div style={{display: 'flex', justifyContent: 'center', alignContent: 'auto'}}>        
+        <Link to="/datenschutz" className="underline" style={{marginLeft: '10px', fontSize: '8px'}}>
+            Datenschutz
+          </Link>
+        
+          <Link to="/impressum" className="underline" style={{ marginLeft: '5px', fontSize: '8px'}}>
+            Impressum
+          </Link>
+        </div>
+
     </section>
   )
   

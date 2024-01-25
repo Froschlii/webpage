@@ -17,7 +17,7 @@ const renderContent ={
         <h1 className= "sm:text-xl sm:leading-dnug text-center neo-brutalism-blue py-4 px-6 text-white mx-5"> 
         Hey! Ich heiße <span className="font-semibold"> Nils Paweldyk</span> ✌🏻
         <br/>
-        und befinde mich im M.Sc.Psychologie. Nebenbei begeistere ich mich fürs programmieren.
+        und befinde mich im M.Sc.Psychologie. Nebenbei begeistere ich mich fürs Front- sowie Backend-development.
         </h1>
     ),
     2: (
@@ -36,7 +36,7 @@ const renderContent ={
     ),
     4: (
         <InfoBox 
-        text="konnte ich dein Interesse wecken? Dann würde ich mich sehr darüber freuen, wenn du mir hier Bescheid gibst:"
+        text="Konnte ich dein Interesse wecken? Dann würde ich mich sehr darüber freuen, wenn du mir hier Bescheid gibst:"
         link="/contact"
         btnText="Let's talk"
         />

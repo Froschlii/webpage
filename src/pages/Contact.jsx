@@ -1,12 +1,15 @@
 import React, { Suspense, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
 import { Canvas } from '@react-three/fiber';
+import { Link } from 'react-router-dom'
+
 
 import Loader from '../components/Loader';
 
 import Fox from '../models/Fox';
 import useAlert from '../hooks/useAlert';
 import Alert from '../components/Alert';
+
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -58,7 +61,7 @@ const Contact = () => {
   const handleBlur = () => setCurrentAnimation('idle');
 
   return (
-    <section className="relative flex lg:flex-row flex-col max-container h-[100vh]">
+    <section className="relative flex lg:flex-row flex-col max-container h-auto">
       {alert.show && <Alert {...alert} />}
       <div className="flex-1 min-w-[50%] flex flex-col">
         <h1 className="head-text">Schreib mir gerne: </h1>
@@ -119,6 +122,21 @@ const Contact = () => {
               {isLoading ? 'Sending...' : 'Send Message'}
           </button>
         </form>
+
+        <br/><br/>
+
+      <hr className="border-slate-200" />
+
+      <div style={{display: 'flex', justifyContent: 'center', alignContent: 'auto'}}>        
+        <Link to="/datenschutz" className="underline" style={{ marginLeft: '10px', fontSize: '8px'}}>
+            Datenschutz
+          </Link>
+        
+          <Link to="/impressum" className="underline" style={{ marginLeft: '5px', fontSize: '8px'}}>
+            Impressum
+          </Link>
+        </div>
+        
       </div>
       
       <div className="lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]">
@@ -143,6 +161,7 @@ const Contact = () => {
           </Suspense>
         </Canvas>
       </div>
+
     </section>
   )
 }

@@ -8,8 +8,8 @@ import CTA from '../components/CTA'
 const Projects = () => {
   return (
     <section className="max-container h-auto ">
-      <h1 className="head-text">
-        My <span className="blue-gradient_txt font-semibold drop-shadow">Projects</span>
+       <h1 className="head-text">
+        My <span className="blue-gradient_text font-semibold drop-shadow">Projects</span>
       </h1>
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
@@ -111,8 +111,21 @@ const Projects = () => {
 
       <hr className="border-slate-200" />
 
-      <CTA />
+      <CTA /><br/><br/>
+
+      <hr className="border-slate-200" />
+
       
+      <div style={{display: 'flex', justifyContent: 'center', alignContent: 'auto'}}>        
+        <Link to="/datenschutz" className="underline" style={{ marginLeft: '10px', fontSize: '8px'}}>
+            Datenschutz
+          </Link>
+        
+          <Link to="/impressum" className="underline" style={{ marginLeft: '5px', fontSize: '8px'}}>
+            Impressum
+          </Link>
+        </div>
+
     </section>
   )
 }

@@ -8,7 +8,7 @@ const CTA = () => {
           Du glaubst, wir passen zusammen? <br className="sm:block hidden" />
           Schreib mich an! 
         </p>
-            <Link to="/contact" className="btn ">
+            <Link to="/contact" className="btn" style={{ minWidth: '187px', width:'auto', marginRight: '40px', marginLeft: '40px'}}>
                  Contact   
             </Link>
     </section>
