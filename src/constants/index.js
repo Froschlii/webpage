@@ -110,7 +110,7 @@ export const projects = [
         theme: 'btn-back-red',
         name: 'CS50x at Harvard',
         description: 'Im Fokus des Projekts lagen algorithmisches Denken, Abstraktion, Datenstrukturen und verschiedene Programmiersprachen wie C, Python, SQL, HTML, CSS und JavaScript. Das abschließende Projekt stellt diese Website dar, bei der ich node.js und react verwendet habe.',
-        link: 'https://cs50.harvard.edu/x/2023/',
+        link: 'https://certificates.cs50.io/9385aeb6-91e5-48b1-b047-89088b8106b0.pdf?size=letter',
     },
     {
         iconUrl: javascript,

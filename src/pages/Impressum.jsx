@@ -12,9 +12,9 @@ const Impressum = () => {
                 <li>{haftungsausschluss.impressum.header}</li>
                 <li>{lebenslaufData.personalInfo.name}</li>
                 <li>{lebenslaufData.personalInfo.adress}</li>
-                <li>{lebenslaufData.personalInfo.Anschrift}</li>
+                <li>{lebenslaufData.personalInfo.anschrift}</li>
                 <li>{lebenslaufData.personalInfo.impressumort}</li>
-                <li>Telefon: {lebenslaufData.personalInfo.Telefon}</li>
+                <li>Telefon: {lebenslaufData.personalInfo.phone}</li>
                 <li>E-Mail: {lebenslaufData.personalInfo.email}</li>
                 <li>{haftungsausschluss.impressum.steueridentifikationsnummer}</li>
                 <li>{haftungsausschluss.impressum.haftungshinweis}</li>
