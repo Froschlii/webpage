@@ -8,13 +8,13 @@ import Hooh from '../models/Hooh';
 import Mew from '../models/Mew';
 import HomeInfo from '../components/HomeInfo';
 
-import sakura from '../assets/sakura.mp3' //2:44:40
+import TwinleafTown from '../assets/TwinleafTown.mp3' //2:44:40
 import { soundoff, soundon } from '../assets/icons';
 
 
 
 const Home = () => {
-  const audioRef = useRef(new Audio(sakura));
+  const audioRef = useRef(new Audio(TwinleafTown));
   audioRef.current.volume = 0.4;
   audioRef.current.loop = true;
   const[isRotating, setIsRotating] = useState(false);
@@ -34,12 +34,14 @@ const Home = () => {
 
   const adjustPokeballForScreenSize = () => {
     let screenScale = null;
-    let screenPosition = [0, 18.7, -45];
+    let screenPosition = null;
     let rotation = [1.7, 9.42, -0.8];
 
     if (window.innerWidth < 768) {
-      screenScale = [0.3, 0.3, 0.3];
+      screenPosition = [0, 8.7, -45];
+      screenScale = [0.35, 0.35, 0.35];
     } else {
+      screenPosition = [0, 18.7, -45];
       screenScale = [0.52, 0.52, 0.52];
     }
     return [screenScale, screenPosition, rotation];
