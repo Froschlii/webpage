@@ -11,7 +11,7 @@ const Lebenslauf = () => {
     <div>
       <section className="max-container h-auto">
       <h1 className="head-text">
-      {lebenslaufData.personalInfo.name}'s <span className="blue-gradient_text font-semibold drop-shadow">Lebenslauf</span>
+      {lebenslaufData.personalInfo.name}s <span className="blue-gradient_text font-semibold drop-shadow">Lebenslauf</span>
       </h1>
         
 
@@ -37,29 +37,55 @@ const Lebenslauf = () => {
             <li>Staatsangehörigkeit: {lebenslaufData.personalInfo.staatsangehörigkeit}</li>
             <br/>
 
+
             <h2 className="text-black text-cl font-popping font-semibold">Ausbildung</h2>
-            {lebenslaufData.ausbildung.map((edu, index) => (
-            <li key={index} >
-              {edu.year}, {edu.degree} at {edu.school}
-              </li>
-          ))}
+            <table style={{ borderCollapse: 'collapse', width: '100%' }}>
+              <tbody>
+                <tr>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>Jahr</td>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>Alles Andere</td>
+                </tr>
+                {lebenslaufData.ausbildung.map((edu, index) => (
+                  <tr key={index}>
+                    <td style={{ border: '1px solid #ddd', padding: '8px' }}>{edu.year}</td>
+                    <td style={{ border: '1px solid #ddd', padding: '8px' }}>{edu.degree} - {edu.school}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+
           </ul>
-          
+              
           </div>
         </div>
 
         <br />
 
         <div className="flex" style={{ alignItems: 'normal', justifyContent: 'normal', textAlign: 'justify' }}>
-          <ul className="text-black-500/50 font-normal pl-1 text-small" style={{ flex: 1 }}>
+        <ul className="text-black-500/50 font-normal pl-1 text-small" style={{ flex: 1 }}>
           <h2 className="text-black text-cl font-popping font-semibold">Praktische Erfahrungen</h2>
-          {lebenslaufData.praktischeErfahrungen.map((exp, index) => (
-            <li key={index}>
-              {exp.year}, {exp.what} {exp.where}
-            </li>
-          ))}
-          </ul>
-        </div>
+          <table style={{ borderCollapse: 'collapse', width: '100%' }}>
+            <thead>
+              <tr>
+                <th style={{ border: '1px solid #ddd', padding: '8px' }}>Wann</th>
+                <th style={{ border: '1px solid #ddd', padding: '8px' }}>Was</th>
+                <th style={{ border: '1px solid #ddd', padding: '8px' }}>Wo</th>
+              </tr>
+            </thead>
+            <tbody>
+              {lebenslaufData.praktischeErfahrungen.map((exp, index) => (
+                <tr key={index}>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>{exp.year}</td>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>{exp.what}</td>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>{exp.where}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </ul>
+      </div>
+
+
 
         <br/>
         <Link to="/About" className="btn max-width">
@@ -121,35 +147,51 @@ const Lebenslauf = () => {
             <br/>
 
             <h2 className="text-black text-cl font-popping font-semibold">Ausbildung</h2>
-            {lebenslaufData.ausbildung.map((edu, index) => (
-            <li key={index} >
-              {edu.year}, {edu.degree} at {edu.school}
-              </li>
-          ))}
+            <table style={{ borderCollapse: 'collapse', width: '100%' }}>
+              <tbody>
+                <tr>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>Jahr</td>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>Alles Andere</td>
+                </tr>
+                {lebenslaufData.ausbildung.map((edu, index) => (
+                  <tr key={index}>
+                    <td style={{ border: '1px solid #ddd', padding: '8px' }}>{edu.year}</td>
+                    <td style={{ border: '1px solid #ddd', padding: '8px' }}>{edu.degree} - {edu.school}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+
           </ul>
-          
+              
           </div>
         </div>
 
         <br />
-        <div style={{ maxWidth: '280px', width:'auto', marginRight: '50px', marginLeft: '14px' }}>
-          <Link to="/About" className="btn max-width">
-            <button className="w-min-300"> Infos | Skillset </button>
-          </Link>
-        </div>
-        <br />
 
-        <div className="flex">
-          <ul className="text-black-500/50 font-normal pl-1 text-small" style={{ flex: 1 }}>
+        <div className="flex" style={{ alignItems: 'normal', justifyContent: 'normal', textAlign: 'Left' }}>
+        <ul className="text-black-500/50 font-normal pl-1 text-small" style={{ flex: 1 }}>
           <h2 className="text-black text-cl font-popping font-semibold">Praktische Erfahrungen</h2>
-          {lebenslaufData.praktischeErfahrungen.map((exp, index) => (
-            <li key={index}>
-              {exp.year}, {exp.what} {exp.where}
-            </li>
-          ))}
-          </ul>
-        </div>
-        <br/>
+          <table style={{ borderCollapse: 'collapse', width: '100%' }}>
+            <thead>
+              <tr>
+                <th style={{ border: '1px solid #ddd', padding: '4px' }}>Wann</th>
+                <th style={{ border: '1px solid #ddd', padding: '4px' }}>Was</th>
+                <th style={{ border: '1px solid #ddd', padding: '4px' }}>Wo</th>
+              </tr>
+            </thead>
+            <tbody>
+              {lebenslaufData.praktischeErfahrungen.map((exp, index) => (
+                <tr key={index}>
+                  <td style={{ border: '1px solid #ddd', padding: '4px' }}>{exp.year}</td>
+                  <td style={{ border: '1px solid #ddd', padding: '4px' }}>{exp.what}</td>
+                  <td style={{ border: '1px solid #ddd', padding: '4px' }}>{exp.where}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </ul>
+      </div>
 
         <hr className="border-slate-200" />
 

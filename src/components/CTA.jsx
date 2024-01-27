@@ -9,7 +9,7 @@ const CTA = () => {
           Schreib mich an! 
         </p>
             <Link to="/contact" className="btn" style={{ minWidth: '187px', width:'auto', marginRight: '40px', marginLeft: '40px'}}>
-                 Contact   
+                 Kontakt   
             </Link>
     </section>
   )

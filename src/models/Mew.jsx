@@ -6,11 +6,13 @@ const Mew = ({ isRotating, ...props}) => {
   const ref = useRef();
   const { scene, animations } = useGLTF(mewScene);
   const { actions } = useAnimations(animations, ref);
+  
 
   useEffect(() => {
     if(isRotating) {
         actions['Take 001'].play();
     } else {
+        
         actions['Take 001'].stop();
     }
   }, [actions, isRotating])

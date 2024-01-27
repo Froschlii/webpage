@@ -80,8 +80,8 @@ export const experiences = [
         date: "Ab dem 01.03.2024",
         points: [
             "M.Sc.Psychologie Studium in Regelstudienzeit abschließen",
-            "Im Anschluss: Psychotherapeutenausbildung absolvieren, die voraussichtlich 3 bis 4 Jahre in Teilzeit dauern und in Chemnitz stattfinden wird (meist Abends)",
-            "Über die gesamte Dauer: weiterhin Halbtags Berufstätig bleiben und ggf. ein Jahr ans Studium und 1 bis 2 Jahre an die Ausbildung anzuhängen."
+            "Im Anschluss: Psychotherapeutenausbildung absolvieren, die voraussichtlich 3 bis 4 Jahre in Teilzeit dauern und in Chemnitz stattfinden wird (meist abends)",
+            "Über die gesamte Dauer: weiterhin halbtags berufstätig bleiben und ggf. ein Jahr ans Studium und 1 bis 2 Jahre an die Ausbildung anhängen."
         ],
     },
 ];
@@ -108,14 +108,14 @@ export const projects = [
     {
         iconUrl: harvard,
         theme: 'btn-back-red',
-        name: 'CS50x at Harvard',
+        name: 'CS50x, Harvard',
         description: 'Im Fokus des Projekts lagen algorithmisches Denken, Abstraktion, Datenstrukturen und verschiedene Programmiersprachen wie C, Python, SQL, HTML, CSS und JavaScript. Das abschließende Projekt stellt diese Website dar, bei der ich node.js und react verwendet habe.',
         link: 'https://certificates.cs50.io/9385aeb6-91e5-48b1-b047-89088b8106b0.pdf?size=letter',
     },
     {
         iconUrl: javascript,
         theme: 'btn-back-yellow',
-        name: 'This Website',
+        name: 'Diese Website / Portfolio',
         description: 'Mithilfe von zahlreichen Tutorials wurde diese Website erstellt.',
         link: "https://github.com/Froschlii",
     },
@@ -125,7 +125,7 @@ export const notfinprojects = [
     {
         iconUrl: harvard,
         theme: 'btn-back-green',
-        name: 'CS50w at Harvard',
+        name: 'CS50w, Harvard',
         description: 'CS50w ist der nächste Schritt und der direkte Anschlusskurs an CS50x. Hierbei werden Python, JavaScript und SQL sowie die frameworks Django, React und Bootstap behandelt.',
         link: 'https://pll.harvard.edu/course/cs50s-web-programming-python-and-javascript',
     },
@@ -144,15 +144,15 @@ export const lebenslaufData = {
     },
     ausbildung: [
         { year: '08/2008', school: 'Grundschule Don-Bosco-Schule', degree: 'Grundschule' },
-        { year: '08/2012', school: 'Werner-Heisenberg-Gymnasium', degree: '' },
+        { year: '08/2012', school: 'Werner-Heisenberg-Gymnasium', degree: 'Gymnasium' },
         { year: '02/2018', school: 'Wechsel Klasse 10, 2. Halbjahr zu Landrat-Lucas-Gymnasium', degree: 'Abitur' },
         { year:' 09/2020', school: 'B.Sc.Psychologie an HSD Hochschule Döpfer', degree: 'Bachelor of Science' },
-        { year: '09/2023', school: 'M.Sc.Psychologie an TU Chemnitz', degree: 'ongoing, then Master of Science' },
+        { year: '09/2023', school: 'M.Sc.Psychologie an TU Chemnitz', degree: 'Laufend, Master of Science' },
     ],
     praktischeErfahrungen: [
         { year: '28.11.2016 - 06.12.2016', what: 'Sozialpraktikum', where: 'Physio-Centrum MEDI LEV'},
         { year: '04.08.2017 - 22.08.2017', what: 'Schülerpraktikum', where: 'Wiener-Power-Electronics'},
-        { year: '01.08.2021', what: 'Werksstudent', where: 'Ford'},
+        { year: '01.08.2021 - 31.06.2023', what: 'Werksstudent', where: 'Ford'},
         { year: '01.09.2022 - 28.02.2023', what: '540 Stunden Praktikum', where: 'MVZ Odendahl und Kollegen'},   
         { year: '01.06.2023 - 31.12.2023', what: 'CS50x', where: 'Harvard'},
         { year: 'Oktober 2019', what: '2 Tage Kurz-Praktikum', where: 'Fassbacher Hof'},

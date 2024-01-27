@@ -22,7 +22,7 @@ const About = () => {
       </div>
 
       <div className="py-10 glex glex-col">
-        <h3 className="subhead-text">Interessen/ Skills</h3>
+        <h3 className="subhead-text">Interessen/ Fähigkeiten</h3>
         
         <div className="mt-16 flex flex-wrap gap-12"> 
           {skills.map((skill) => (
@@ -41,10 +41,10 @@ const About = () => {
       </div>
 
       <div className="py-16">
-        <h3 className="subhead-text">Work experience</h3>
+        <h3 className="subhead-text">Arbeitserfahrung / das suche ich</h3>
           <div className="mt-5 flex flex-col gap-3 text-slate-500">
           <p>
-            Ich würde mich darüber freuen, Sie in einem persönliches Gespräch von mir überzeugen zu können!
+            Ich würde mich darüber freuen, Dich in einem persönlichen Gespräch von mir überzeugen zu können!
           </p>
         </div>
         

@@ -17,28 +17,28 @@ const renderContent ={
         <h1 className= "sm:text-xl sm:leading-dnug text-center neo-brutalism-blue py-4 px-6 text-white mx-5"> 
         Hey! Ich heiße <span className="font-semibold"> Nils Paweldyk</span> ✌🏻
         <br/>
-        und befinde mich im M.Sc.Psychologie. Nebenbei begeistere ich mich fürs Front- sowie Backend-development.
+        und befinde mich im M.Sc.Psychologie. Nebenbei begeistere ich mich fürs Front- sowie Backend-Development.
         </h1>
     ),
     2: (
         <InfoBox 
         text="Alles, was ich zu bieten habe auf einen Blick:"
         link="/about"
-        btnText="learn more"
+        btnText="mehr Infos"
         />
     ),
     3: (
         <InfoBox 
         text="Hier sind meine Hobbies / Projekte, sowie alles, an was ich bis dato in meiner Freizeit gearbeitet habe:"
         link="/projects"
-        btnText="Visit my portfolio"
+        btnText="Mein Portfolio"
         />
     ),
     4: (
         <InfoBox 
         text="Konnte ich dein Interesse wecken? Dann würde ich mich sehr darüber freuen, wenn du mir hier Bescheid gibst:"
         link="/contact"
-        btnText="Let's talk"
+        btnText="Schreib mir 🤗"
         />
     ),
 }

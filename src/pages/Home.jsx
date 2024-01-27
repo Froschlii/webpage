@@ -34,13 +34,13 @@ const Home = () => {
 
   const adjustPokeballForScreenSize = () => {
     let screenScale = null;
-    let screenPosition = [0, 8, -45];
+    let screenPosition = [0, 18.7, -45];
     let rotation = [1.7, 9.42, -0.8];
 
     if (window.innerWidth < 768) {
       screenScale = [0.3, 0.3, 0.3];
     } else {
-      screenScale = [0.4, 0.4, 0.4];
+      screenScale = [0.52, 0.52, 0.52];
     }
     return [screenScale, screenPosition, rotation];
   }
