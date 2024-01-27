@@ -18,25 +18,53 @@ const Lebenslauf = () => {
         <br />
 
         <div className="text-black-500/50 font-normal pl-1">
-          <div className="flex" style={{ alignItems: 'end', justifyContent: 'end' }}>
+          <div className="flex" style={{ alignItems: 'end', justifyContent: 'start' }}>
 
-            <div style={{ maxWidth: '300px', marginRight: '32px', marginTop: 'auto' }}>
+            <div style={{ maxWidth: '226.5px', marginRight: '32px', marginTop: 'auto' }}>
+              <div className="vertical-line"></div>
               <img src={nils} alt="Nils" />
               <br/>
             </div>
 
           <ul>
-        <h2 className="text-black text-cl font-popping font-semibold"> Persönliche Informationen</h2>
-    
-            <li>Name: {lebenslaufData.personalInfo.name}</li>
-            <li>Anschrift: {lebenslaufData.personalInfo.anschrift}</li>
-            <li>E-Mail: {lebenslaufData.personalInfo.email}</li>
-            <li>Telefonnummer: {lebenslaufData.personalInfo.phone}</li>
-            <li>Geburtsdatum: {lebenslaufData.personalInfo.geburtsdatum}</li>
-            <li>Geburtsort: {lebenslaufData.personalInfo.geburtsort}</li>
-            <li>Staatsangehörigkeit: {lebenslaufData.personalInfo.staatsangehörigkeit}</li>
+          <h2 className="text-black text-cl font-popping font-semibold">Persönliche Informationen</h2>
+            <table style={{ borderCollapse: 'collapse', width: '100%' }}>
+              <tbody>
+                <tr>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>Name</td>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>{lebenslaufData.personalInfo.name}</td>
+                </tr>
+                <tr>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>Anschrift</td>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>{lebenslaufData.personalInfo.anschrift}</td>
+                </tr>
+                <tr>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>E-Mail</td>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>{lebenslaufData.personalInfo.email}</td>
+                </tr>
+                <tr>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>Telefonnummer</td>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>{lebenslaufData.personalInfo.phone}</td>
+                </tr>
+                <tr>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>Geburtsdatum</td>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>{lebenslaufData.personalInfo.geburtsdatum}</td>
+                </tr>
+                <tr>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>Geburtsort</td>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>{lebenslaufData.personalInfo.geburtsort}</td>
+                </tr>
+                <tr>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>Staatsangehörigkeit</td>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>{lebenslaufData.personalInfo.staatsangehörigkeit}</td>
+                </tr>
+              </tbody>
+            </table>
+
             <br/>
 
+                </ul>
+                </div>
 
             <h2 className="text-black text-cl font-popping font-semibold">Ausbildung</h2>
             <table style={{ borderCollapse: 'collapse', width: '100%' }}>
@@ -54,9 +82,7 @@ const Lebenslauf = () => {
               </tbody>
             </table>
 
-          </ul>
               
-          </div>
         </div>
 
         <br />
@@ -135,15 +161,40 @@ const Lebenslauf = () => {
 
 
           <ul>
-        <h2 className="text-black text-cl font-popping font-semibold"> Persönliche Informationen</h2>
-            <li>Email: {lebenslaufData.personalInfo.name}</li>
-            <li>Phone: {lebenslaufData.personalInfo.email}</li>
-            <li>Anschrift: {lebenslaufData.personalInfo.Anschrift}</li>
-            <li>Geburtsdatum: {lebenslaufData.personalInfo.Geburtsdatum}</li>
-            <li>Geburtsort: {lebenslaufData.personalInfo.Geburtsort}</li>
-            <li>Staatsangehörigkeit: {lebenslaufData.personalInfo.Staatsangehörigkeit}</li>
-            <li>Telefon: {lebenslaufData.personalInfo.Telefon}</li>
-            <li>E-Mail: {lebenslaufData.personalInfo.email}</li>
+          <h2 className="text-black text-cl font-popping font-semibold">Persönliche Informationen</h2>
+            <table style={{ borderCollapse: 'collapse', width: '100%' }}>
+              <tbody>
+                <tr>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>Name</td>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>{lebenslaufData.personalInfo.name}</td>
+                </tr>
+                <tr>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>Anschrift</td>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>{lebenslaufData.personalInfo.anschrift}</td>
+                </tr>
+                <tr>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>E-Mail</td>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>{lebenslaufData.personalInfo.email}</td>
+                </tr>
+                <tr>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>Telefonnummer</td>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>{lebenslaufData.personalInfo.phone}</td>
+                </tr>
+                <tr>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>Geburtsdatum</td>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>{lebenslaufData.personalInfo.geburtsdatum}</td>
+                </tr>
+                <tr>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>Geburtsort</td>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>{lebenslaufData.personalInfo.geburtsort}</td>
+                </tr>
+                <tr>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>Staatsangehörigkeit</td>
+                  <td style={{ border: '1px solid #ddd', padding: '8px' }}>{lebenslaufData.personalInfo.staatsangehörigkeit}</td>
+                </tr>
+              </tbody>
+            </table>
+
             <br/>
 
             <h2 className="text-black text-cl font-popping font-semibold">Ausbildung</h2>
